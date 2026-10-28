@@ -14,7 +14,8 @@
     "compute:sample": "tsx src/cli/computeSample.ts",
     "verify:sample": "tsx src/cli/verifySample.ts",
     "verify:merkle": "tsx src/cli/verifyMerkle.ts",
-    "scan:secrets": "tsx scripts/scanSecrets.ts"
+    "scan:secrets": "tsx scripts/scanSecrets.ts",
+    "preflight": "tsx scripts/preflight.ts"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^5.0.2",

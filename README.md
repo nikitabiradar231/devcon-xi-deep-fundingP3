@@ -85,6 +85,9 @@ npm run verify:merkle
 
 # 5. Foundry Smart Contract Security Suite (29 tests)
 npm run test:contracts
+
+# 6. Deployment Preflight (Environment & Integrity Check)
+npm run preflight
 ```
 
 ### Launch Web Application
