@@ -46,6 +46,19 @@ export default function DisputesPage() {
 
   return (
     <div className="space-y-8 animate-fadeIn">
+      {/* Demonstration Banner */}
+      <div className="rounded-2xl p-4 bg-slate-900/90 border border-rose-500/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+        <div className="flex items-center gap-2.5">
+          <span className="w-2.5 h-2.5 rounded-full bg-rose-400 shrink-0" />
+          <span className="text-slate-300">
+            <strong className="text-rose-300">Dispute Lifecycle Simulation:</strong> Demonstrating how challenge deadlines and open disputes prevent malicious finalization. Tested via <code className="text-rose-400">test/DisputeFlow.t.sol</code>.
+          </span>
+        </div>
+        <div className="flex items-center gap-2 shrink-0 font-mono text-[11px] text-slate-400">
+          <span>Target Contract: DeepFunding.submitDispute()</span>
+        </div>
+      </div>
+
       {/* Header */}
       <div className="border-b border-slate-800 pb-6">
         <div className="flex items-center gap-2 text-xs font-semibold text-rose-400 uppercase tracking-wider mb-1">
@@ -68,7 +81,7 @@ export default function DisputesPage() {
             <Lock className="w-4 h-4 text-indigo-400" />
           </div>
           <div className="text-2xl font-bold text-white font-display">#{sampleResult.distributionId}</div>
-          <div className="text-[11px] text-slate-500 font-mono">Sepolia Chain 11155111</div>
+          <div className="text-[11px] text-slate-500 font-mono">Simulated Sample • Target: Sepolia 11155111</div>
         </div>
 
         <div className="glass-card rounded-2xl p-5 border border-slate-800 space-y-1">

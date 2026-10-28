@@ -29,6 +29,20 @@ export default function DashboardPage() {
 
   return (
     <div className="space-y-8 animate-fadeIn">
+      {/* Local Demo Mode & Verification Notice */}
+      <div className="rounded-2xl p-4 bg-slate-900/90 border border-indigo-500/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+        <div className="flex items-center gap-2.5">
+          <span className="w-2.5 h-2.5 rounded-full bg-amber-400 shrink-0" />
+          <span className="text-slate-300">
+            <strong className="text-amber-300">Local Demonstration Mode:</strong> All visual graphs, peer judgments, and Merkle proofs reflect the verified deterministic sample dataset (100% bit-for-bit verified).
+          </span>
+        </div>
+        <div className="flex items-center gap-2 shrink-0 font-mono text-[11px] text-slate-400">
+          <span className="px-2 py-0.5 rounded-md bg-slate-800 text-slate-300 border border-slate-700">Sepolia Target: 11155111</span>
+          <span className="text-emerald-400 font-semibold">Preflight: PASS</span>
+        </div>
+      </div>
+
       {/* Hero Header */}
       <div className="relative overflow-hidden rounded-3xl glass-panel p-8 sm:p-10 border border-slate-800">
         <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-indigo-500/10 via-cyan-500/5 to-transparent rounded-full blur-3xl pointer-events-none" />

@@ -99,6 +99,10 @@ npm run dev
 ```
 Open [http://localhost:3000](http://localhost:3000) to explore the interactive dependency graph, jury preference matrix, and Pune claim simulator.
 
+### Demonstration Walkthrough
+For evaluators, judges, and reviewers, follow our step-by-step timed 3–5 minute presentation guide:
+👉 **[Timed 3–5 Minute Demonstration Script (`docs/demo-script.md`)](docs/demo-script.md)**
+
 ---
 
 ## 5. Deployment Status: Local Validation vs Live Sepolia

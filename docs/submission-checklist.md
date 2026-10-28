@@ -24,6 +24,8 @@
 | **GitHub Synchronization** | Local HEAD synchronized with remote `origin/main` | `git ls-remote origin refs/heads/main` matches local HEAD | **PASS** |
 | **Deployment Operations** | 16-section reproducible deployment guide | `docs/deployment.md` complete with troubleshooting & preflight | **PASS** |
 | **Deployment Preflight** | Automated offline preflight validation | `npm run preflight` (7/7 preflight checks passed) | **PASS** |
+| **Timed Demo Walkthrough**| 3–5 minute step-by-step demonstration script | `docs/demo-script.md` timed guide for judges and evaluators | **PASS** |
+| **Frontend Demo Mode** | UI clearly labels local sample data vs live Sepolia | Verified in `app/page.tsx`, `Navbar.tsx`, `claims/page.tsx` | **PASS** |
 | **Sepolia Testnet Deployment** | Live contracts deployed to Ethereum Sepolia (`11155111`) | Not broadcasted yet; awaiting user private key & authorization | **PENDING** |
 | **Contract Addresses** | Verified onchain contract addresses on Etherscan | Recorded in `deployments/sepolia.json` (currently `null` / pending) | **PENDING** |
 | **Official Portal Submission**| Official challenge portal submission acceptance receipt | Requires user submission via Devcon XI Loops House portal | **PENDING** |

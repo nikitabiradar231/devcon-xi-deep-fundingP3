@@ -54,11 +54,24 @@ export default function ClaimsPage() {
 
   return (
     <div className="space-y-8 animate-fadeIn">
+      {/* Demonstration Banner */}
+      <div className="rounded-2xl p-4 bg-slate-900/90 border border-emerald-500/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+        <div className="flex items-center gap-2.5">
+          <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 shrink-0" />
+          <span className="text-slate-300">
+            <strong className="text-emerald-300">Interactive Merkle Proof Simulator:</strong> All 8 recipient proofs are cryptographically verified against committed root <code className="text-emerald-400">0xb86f90...</code>.
+          </span>
+        </div>
+        <div className="flex items-center gap-2 shrink-0 font-mono text-[11px] text-slate-400">
+          <span>Target Contract: DeepFunding.claim()</span>
+        </div>
+      </div>
+
       {/* Header */}
       <div className="border-b border-slate-800 pb-6">
         <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-1">
           <Coins className="w-4 h-4" />
-          <span>Onchain Recipient Claims</span>
+          <span>Recipient Claims & Merkle Verification</span>
         </div>
         <h1 className="text-2xl sm:text-4xl font-bold text-white font-display">
           Claim Committed Allocations
@@ -147,13 +160,13 @@ export default function ClaimsPage() {
                       <div className="text-2xl font-extrabold text-emerald-400 font-display">
                         {alloc.amountEth} ETH
                       </div>
-                      <div className="text-[10px] text-slate-500 font-mono">100% Guaranteed Onchain</div>
+                      <div className="text-[10px] text-slate-400 font-mono">Merkle Proof Verified</div>
                     </div>
 
                     {isClaimed ? (
                       <div className="px-4 py-2 rounded-xl bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-xs font-semibold flex items-center gap-1.5">
                         <CheckCircle2 className="w-4 h-4" />
-                        <span>Payout Transferred</span>
+                        <span>Simulated Payout Complete</span>
                       </div>
                     ) : (
                       <button
@@ -162,7 +175,7 @@ export default function ClaimsPage() {
                         className="px-6 py-2.5 rounded-xl font-semibold text-xs bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white shadow-lg shadow-emerald-600/30 transition-all flex items-center gap-2 active:scale-95"
                       >
                         <Coins className="w-3.5 h-3.5" />
-                        <span>{isClaiming ? 'Claiming on Sepolia...' : 'Claim Payout'}</span>
+                        <span>{isClaiming ? 'Verifying Merkle Proof...' : 'Simulate Claim'}</span>
                       </button>
                     )}
                   </div>

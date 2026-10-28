@@ -102,8 +102,8 @@ export function Navbar() {
           {/* Network indicator & Wallet Connect */}
           <div className="flex items-center gap-3">
             <div className="hidden lg:flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-mono bg-slate-900 border border-slate-800 text-slate-300">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span>Sepolia (11155111)</span>
+              <span className="w-2 h-2 rounded-full bg-amber-400" />
+              <span>Local Demo Mode (Target: Sepolia 11155111)</span>
             </div>
 
             <div className="relative">
