@@ -1,0 +1,195 @@
+{
+  "applicationId": "devcon-event-app",
+  "graphHash": "0xd93a4f71337c24c18330a5947be0a904da8ab7cbfb4f378e6d0fa798f5286047",
+  "jurors": [
+    {
+      "address": "0x9999999999999999999999999999999999999999",
+      "name": "Aarav Sharma",
+      "active": true
+    },
+    {
+      "address": "0xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "name": "Elena Rostova",
+      "active": true
+    },
+    {
+      "address": "0xBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+      "name": "Devon Vance",
+      "active": true
+    },
+    {
+      "address": "0xCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "name": "Mei Lin",
+      "active": true
+    },
+    {
+      "address": "0xDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+      "name": "Tariq Mansoor",
+      "active": true
+    }
+  ],
+  "judgments": [
+    {
+      "applicationId": "devcon-event-app",
+      "juror": "0x9999999999999999999999999999999999999999",
+      "packageA": "pune/qr-ticketing",
+      "packageB": "indic/hindi-i18n",
+      "preference": 4,
+      "scale": 5,
+      "nonce": 1
+    },
+    {
+      "applicationId": "devcon-event-app",
+      "juror": "0x9999999999999999999999999999999999999999",
+      "packageA": "pune/qr-ticketing",
+      "packageB": "wallet/connect-wrapper",
+      "preference": 4,
+      "scale": 5,
+      "nonce": 2
+    },
+    {
+      "applicationId": "devcon-event-app",
+      "juror": "0x9999999999999999999999999999999999999999",
+      "packageA": "wallet/connect-wrapper",
+      "packageB": "crypto/ethereum-provider",
+      "preference": 3,
+      "scale": 5,
+      "nonce": 3
+    },
+    {
+      "applicationId": "devcon-event-app",
+      "juror": "0x9999999999999999999999999999999999999999",
+      "packageA": "utils/graph-core",
+      "packageB": "utils/graph-core-adapter",
+      "preference": 4,
+      "scale": 5,
+      "nonce": 4
+    },
+    {
+      "applicationId": "devcon-event-app",
+      "juror": "0x9999999999999999999999999999999999999999",
+      "packageA": "utils/encoding",
+      "packageB": "utils/graph-core",
+      "preference": 3,
+      "scale": 5,
+      "nonce": 5
+    },
+    {
+      "applicationId": "devcon-event-app",
+      "juror": "0xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "packageA": "pune/qr-ticketing",
+      "packageB": "indic/hindi-i18n",
+      "preference": 5,
+      "scale": 5,
+      "nonce": 1
+    },
+    {
+      "applicationId": "devcon-event-app",
+      "juror": "0xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "packageA": "pune/qr-ticketing",
+      "packageB": "wallet/connect-wrapper",
+      "preference": 3,
+      "scale": 5,
+      "nonce": 2
+    },
+    {
+      "applicationId": "devcon-event-app",
+      "juror": "0xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "packageA": "crypto/ethereum-provider",
+      "packageB": "utils/encoding",
+      "preference": 4,
+      "scale": 5,
+      "nonce": 3
+    },
+    {
+      "applicationId": "devcon-event-app",
+      "juror": "0xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "packageA": "utils/graph-core",
+      "packageB": "utils/graph-core-adapter",
+      "preference": 4,
+      "scale": 5,
+      "nonce": 4
+    },
+    {
+      "applicationId": "devcon-event-app",
+      "juror": "0xBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+      "packageA": "indic/hindi-i18n",
+      "packageB": "wallet/connect-wrapper",
+      "preference": 2,
+      "scale": 5,
+      "nonce": 1
+    },
+    {
+      "applicationId": "devcon-event-app",
+      "juror": "0xBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+      "packageA": "pune/qr-ticketing",
+      "packageB": "crypto/ethereum-provider",
+      "preference": 4,
+      "scale": 5,
+      "nonce": 2
+    },
+    {
+      "applicationId": "devcon-event-app",
+      "juror": "0xBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+      "packageA": "utils/graph-core",
+      "packageB": "utils/encoding",
+      "preference": 4,
+      "scale": 5,
+      "nonce": 3
+    },
+    {
+      "applicationId": "devcon-event-app",
+      "juror": "0xCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "packageA": "pune/qr-ticketing",
+      "packageB": "indic/hindi-i18n",
+      "preference": 4,
+      "scale": 5,
+      "nonce": 1
+    },
+    {
+      "applicationId": "devcon-event-app",
+      "juror": "0xCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "packageA": "wallet/connect-wrapper",
+      "packageB": "indic/hindi-i18n",
+      "preference": 4,
+      "scale": 5,
+      "nonce": 2
+    },
+    {
+      "applicationId": "devcon-event-app",
+      "juror": "0xCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+      "packageA": "utils/graph-core-adapter",
+      "packageB": "utils/graph-core",
+      "preference": 2,
+      "scale": 5,
+      "nonce": 3
+    },
+    {
+      "applicationId": "devcon-event-app",
+      "juror": "0xDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+      "packageA": "pune/qr-ticketing",
+      "packageB": "wallet/connect-wrapper",
+      "preference": 4,
+      "scale": 5,
+      "nonce": 1
+    },
+    {
+      "applicationId": "devcon-event-app",
+      "juror": "0xDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+      "packageA": "crypto/ethereum-provider",
+      "packageB": "wallet/connect-wrapper",
+      "preference": 3,
+      "scale": 5,
+      "nonce": 2
+    },
+    {
+      "applicationId": "devcon-event-app",
+      "juror": "0xDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+      "packageA": "utils/encoding",
+      "packageB": "utils/graph-core-adapter",
+      "preference": 4,
+      "scale": 5,
+      "nonce": 3
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  test-and-verify:
+    name: Build, Test & Security Verification
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: nightly
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: TypeScript Typecheck
+        run: npm run typecheck
+
+      - name: Vitest Test Suite
+        run: npm test
+
+      - name: Secret Scanning
+        run: npm run scan:secrets
+
+      - name: Compute Sample Distribution
+        run: npm run compute:sample
+
+      - name: Verify Sample Audit Manifest
+        run: npm run verify:sample
+
+      - name: Verify Cryptographic Merkle Proofs
+        run: npm run verify:merkle
+
+      - name: Foundry Smart Contract Tests
+        run: forge test -vvv
+
+      - name: Next.js Production Build
+        run: npm run build

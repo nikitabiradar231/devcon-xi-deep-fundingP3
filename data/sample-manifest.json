@@ -1,0 +1,183 @@
+{
+  "schemaVersion": "1.0.0",
+  "algorithmVersion": "bradley-terry-mm-v1-deepflow-v1",
+  "chainId": 11155111,
+  "distributionId": "1",
+  "graphHash": "0xd93a4f71337c24c18330a5947be0a904da8ab7cbfb4f378e6d0fa798f5286047",
+  "judgmentDatasetHash": "0xa4f17c8ac83692f9bf45ab2fdfc07fa6fc15c1de19ecf530eaa1f5614d19c8ae",
+  "jurorSetHash": "0x0dbeb144a61c4f9d49d5444aa10884d48bfb8316a3300c1e31bcf977e1e5b7a3",
+  "merkleRoot": "0xb86f90f7b8bb7898c68751abb0c7cafb049a7f4ef1acc7dbff8b154ada7914c7",
+  "fundingPotWei": "1000000000000000000",
+  "fundingPotEth": "1.000000",
+  "totalAllocatedWei": "1000000000000000000",
+  "exactPotConserved": true,
+  "leafCount": 8,
+  "parameters": {
+    "priorAlpha": 0.05,
+    "defaultRetentionFraction": 0.3,
+    "rootRetentionFraction": 0.2,
+    "maxIterations": 300,
+    "tolerance": 1e-12
+  },
+  "packages": [
+    {
+      "packageId": "crypto/ethereum-provider",
+      "name": "Ethereum Provider Core",
+      "maintainer": "0x5555555555555555555555555555555555555555",
+      "intrinsicJuryScore": 0.14836237298940136,
+      "normalizedJuryWeight": 0.14836237298940136,
+      "retentionFraction": 0.3,
+      "allocatedWeight": 0.042281038246642644,
+      "amountWei": "42281038246640423",
+      "amountEth": "0.042281",
+      "sharePercentage": 4.2281,
+      "merkleProof": [
+        "0x284c0b7bf01f2ca72d32ffd83e277e315c755ca231c17b86c5a29398cfa264ce",
+        "0x50910e9fe8a1c26a5c1c8495310ac68dfcc60a797132126839eb59931e2a00b4",
+        "0xaa7042390cb7acd2fc42a968b3976da5d1540e867d6a041b865714db03dfc42c"
+      ],
+      "leafHash": "0x5f2294836ee1b90c775b2eec4b01a453d49a49ee67097fb4020b53d4f4d1c5b7",
+      "explanation": "'Ethereum Provider Core' received 0.042281 ETH (4.2281% of pot) because the registered jury evaluated its critical contribution to the event app (won 1, tied 2, and lost 1 pairwise matchups). Dependency water flowed through the graph, with this package retaining 30% of its incoming flow and passing the rest to its own dependencies."
+    },
+    {
+      "packageId": "indic/hindi-i18n",
+      "name": "Hindi i18n Localization",
+      "maintainer": "0x3333333333333333333333333333333333333333",
+      "intrinsicJuryScore": 0.06632152975760325,
+      "normalizedJuryWeight": 0.06632152975760325,
+      "retentionFraction": 0.3,
+      "allocatedWeight": 0.029644994035089266,
+      "amountWei": "29644994035090296",
+      "amountEth": "0.029645",
+      "sharePercentage": 2.9645,
+      "merkleProof": [
+        "0x9f07a1b9576d3f22a156d90f0f3c2bdf9fb0f9417dcb3c52a9773b0163245f7a",
+        "0x206e037e340240161b2edb609ffd734831a77ac11284c9d696c6effe9fc495e2",
+        "0xf6cd40aa19ba464a42e991565149cca2dd30ced66c71ab0ed0d082ef5fc605d8"
+      ],
+      "leafHash": "0xa81245aad56e0d8d119856469cf6c24af16c1b1ddf14224a263aaea05a7cfd30",
+      "explanation": "'Hindi i18n Localization' received 0.029645 ETH (2.9645% of pot) because the registered jury evaluated its critical contribution to the event app (won 0, tied 0, and lost 5 pairwise matchups). Dependency water flowed through the graph, with this package retaining 30% of its incoming flow and passing the rest to its own dependencies."
+    },
+    {
+      "packageId": "kavya/event-app",
+      "name": "Kavya Event App",
+      "maintainer": "0x1111111111111111111111111111111111111111",
+      "intrinsicJuryScore": 0.13278223946740464,
+      "normalizedJuryWeight": 0.13278223946740464,
+      "retentionFraction": 0.2,
+      "allocatedWeight": 0.2000000000000735,
+      "amountWei": "200000000000072000",
+      "amountEth": "0.200000",
+      "sharePercentage": 20,
+      "merkleProof": [
+        "0x8d4c98f97e3167cf8c45f83cb9b05b6d482c13f0fff14c697e33c5de682cc56e",
+        "0x4e2d117b04dbb8942093db57820a47a25c04fac944f589278a44be3f83d3e45a",
+        "0xaa7042390cb7acd2fc42a968b3976da5d1540e867d6a041b865714db03dfc42c"
+      ],
+      "leafHash": "0x8ddc55c2de719a5226850329a185db3407af6cadf0f99453743c48d0ee196076",
+      "explanation": "Lead event application 'Kavya Event App' received the initial thank-you pot, retained 20%, and deterministically flowed the remaining 80% down to its open source dependencies according to registered jury preferences."
+    },
+    {
+      "packageId": "pune/qr-ticketing",
+      "name": "Pune QR Ticketing",
+      "maintainer": "0x2222222222222222222222222222222222222222",
+      "intrinsicJuryScore": 0.3093942443132789,
+      "normalizedJuryWeight": 0.3093942443132789,
+      "retentionFraction": 0.35,
+      "allocatedWeight": 0.16134512659957215,
+      "amountWei": "161345126599571613",
+      "amountEth": "0.161345",
+      "sharePercentage": 16.1345,
+      "merkleProof": [
+        "0xff9d53e307fef74e74ad44cbd096025ff241a40fb644548ccbe5fbe60b2a0c18",
+        "0x283da87ed4963e73df77bc0a1ccf875b7bf79972226873f79a2514df49c207c0",
+        "0xf6cd40aa19ba464a42e991565149cca2dd30ced66c71ab0ed0d082ef5fc605d8"
+      ],
+      "leafHash": "0xf3e70eed63ec6053d166c14edf321861f4ecf94a496fc449cf495838d2ba1253",
+      "explanation": "'Pune QR Ticketing' received 0.161345 ETH (16.1345% of pot) because the registered jury evaluated its critical contribution to the event app (won 6, tied 1, and lost 0 pairwise matchups). Dependency water flowed through the graph, with this package retaining 35% of its incoming flow and passing the rest to its own dependencies."
+    },
+    {
+      "packageId": "utils/encoding",
+      "name": "Zero-Allocation Encoding",
+      "maintainer": "0x8888888888888888888888888888888888888888",
+      "intrinsicJuryScore": 0.06074527882405755,
+      "normalizedJuryWeight": 0.06074527882405755,
+      "retentionFraction": 1,
+      "allocatedWeight": 0.32990535048480923,
+      "amountWei": "329905350484813299",
+      "amountEth": "0.329905",
+      "sharePercentage": 32.9905,
+      "merkleProof": [
+        "0xa81245aad56e0d8d119856469cf6c24af16c1b1ddf14224a263aaea05a7cfd30",
+        "0x206e037e340240161b2edb609ffd734831a77ac11284c9d696c6effe9fc495e2",
+        "0xf6cd40aa19ba464a42e991565149cca2dd30ced66c71ab0ed0d082ef5fc605d8"
+      ],
+      "leafHash": "0x9f07a1b9576d3f22a156d90f0f3c2bdf9fb0f9417dcb3c52a9773b0163245f7a",
+      "explanation": "'Zero-Allocation Encoding' received 0.329905 ETH (32.9905% of pot) because the registered jury evaluated its critical contribution to the event app (won 1, tied 1, and lost 2 pairwise matchups). Dependency water flowed through the graph, with this package retaining 100% of its incoming flow and passing the rest to its own dependencies."
+    },
+    {
+      "packageId": "utils/graph-core",
+      "name": "Graph Core Primitives",
+      "maintainer": "0x6666666666666666666666666666666666666666",
+      "intrinsicJuryScore": 0.09254967705381337,
+      "normalizedJuryWeight": 0.09254967705381337,
+      "retentionFraction": 0.25,
+      "allocatedWeight": 0.11341912454349411,
+      "amountWei": "113419124543491134",
+      "amountEth": "0.113419",
+      "sharePercentage": 11.3419,
+      "merkleProof": [
+        "0x8ddc55c2de719a5226850329a185db3407af6cadf0f99453743c48d0ee196076",
+        "0x4e2d117b04dbb8942093db57820a47a25c04fac944f589278a44be3f83d3e45a",
+        "0xaa7042390cb7acd2fc42a968b3976da5d1540e867d6a041b865714db03dfc42c"
+      ],
+      "leafHash": "0x8d4c98f97e3167cf8c45f83cb9b05b6d482c13f0fff14c697e33c5de682cc56e",
+      "explanation": "'Graph Core Primitives' received 0.113419 ETH (11.3419% of pot) because the registered jury evaluated its critical contribution to the event app (won 4, tied 1, and lost 0 pairwise matchups). Dependency water flowed through the graph, with this package retaining 25% of its incoming flow and passing the rest to its own dependencies."
+    },
+    {
+      "packageId": "utils/graph-core-adapter",
+      "name": "Graph Core Adapter",
+      "maintainer": "0x7777777777777777777777777777777777777777",
+      "intrinsicJuryScore": 0.02863446288319781,
+      "normalizedJuryWeight": 0.02863446288319781,
+      "retentionFraction": 0.25,
+      "allocatedWeight": 0.05134518292495348,
+      "amountWei": "51345182924950514",
+      "amountEth": "0.051345",
+      "sharePercentage": 5.1345,
+      "merkleProof": [
+        "0xf3e70eed63ec6053d166c14edf321861f4ecf94a496fc449cf495838d2ba1253",
+        "0x283da87ed4963e73df77bc0a1ccf875b7bf79972226873f79a2514df49c207c0",
+        "0xf6cd40aa19ba464a42e991565149cca2dd30ced66c71ab0ed0d082ef5fc605d8"
+      ],
+      "leafHash": "0xff9d53e307fef74e74ad44cbd096025ff241a40fb644548ccbe5fbe60b2a0c18",
+      "explanation": "'Graph Core Adapter' received 0.051345 ETH (5.1345% of pot) because the registered jury evaluated its critical contribution to the event app (won 0, tied 0, and lost 4 pairwise matchups). Dependency water flowed through the graph, with this package retaining 25% of its incoming flow and passing the rest to its own dependencies."
+    },
+    {
+      "packageId": "wallet/connect-wrapper",
+      "name": "Wallet Connect Wrapper",
+      "maintainer": "0x4444444444444444444444444444444444444444",
+      "intrinsicJuryScore": 0.1612101947112431,
+      "normalizedJuryWeight": 0.1612101947112431,
+      "retentionFraction": 0.3,
+      "allocatedWeight": 0.07205918316536564,
+      "amountWei": "72059183165370721",
+      "amountEth": "0.072059",
+      "sharePercentage": 7.2059,
+      "merkleProof": [
+        "0x5f2294836ee1b90c775b2eec4b01a453d49a49ee67097fb4020b53d4f4d1c5b7",
+        "0x50910e9fe8a1c26a5c1c8495310ac68dfcc60a797132126839eb59931e2a00b4",
+        "0xaa7042390cb7acd2fc42a968b3976da5d1540e867d6a041b865714db03dfc42c"
+      ],
+      "leafHash": "0x284c0b7bf01f2ca72d32ffd83e277e315c755ca231c17b86c5a29398cfa264ce",
+      "explanation": "'Wallet Connect Wrapper' received 0.072059 ETH (7.2059% of pot) because the registered jury evaluated its critical contribution to the event app (won 2, tied 3, and lost 2 pairwise matchups). Dependency water flowed through the graph, with this package retaining 30% of its incoming flow and passing the rest to its own dependencies."
+    }
+  ],
+  "summary": {
+    "totalPackages": 8,
+    "totalJurors": 5,
+    "totalJudgments": 18,
+    "hasCycle": true
+  },
+  "manifestHash": "0x36075dfe5cba3b1dbb496ceea3ce492077eeb9c3c06e9830dbfd36f0189013c9"
+}

@@ -1,0 +1,22 @@
+{
+  "network": "sepolia",
+  "chainId": 11155111,
+  "status": "PENDING_AUTHORIZATION",
+  "notice": "Deployment prepared and validated locally. Live onchain broadcast awaiting explicit user authorization and private key configuration.",
+  "contracts": {
+    "DeepFunding": {
+      "address": null,
+      "deployed": false
+    },
+    "JuryRegistry": {
+      "address": null,
+      "deployed": false
+    }
+  },
+  "sampleDistribution": {
+    "distributionId": "1",
+    "graphHash": "0xd93a4f71337c24c18330a5947be0a904da8ab7cbfb4f378e6d0fa798f5286047",
+    "merkleRoot": "0xb86f90f7b8bb7898c68751abb0c7cafb049a7f4ef1acc7dbff8b154ada7914c7",
+    "fundingPotEth": "1.000000"
+  }
+}

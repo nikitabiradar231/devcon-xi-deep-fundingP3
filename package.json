@@ -1,0 +1,39 @@
+{
+  "name": "pay-the-wells-deep-funding",
+  "version": "1.0.0",
+  "description": "Retroactive and dependency-aware deep funding protocol for open source commons (Road to Devcon XI)",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:contracts": "node scripts/run-forge.js test",
+    "compute:sample": "tsx src/cli/computeSample.ts",
+    "verify:sample": "tsx src/cli/verifySample.ts",
+    "verify:merkle": "tsx src/cli/verifyMerkle.ts",
+    "scan:secrets": "tsx scripts/scanSecrets.ts"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2",
+    "@openzeppelin/merkle-tree": "^1.0.7",
+    "ethers": "^6.13.2",
+    "lucide-react": "^0.395.0",
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.2",
+    "vitest": "^1.6.0"
+  }
+}

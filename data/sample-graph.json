@@ -1,0 +1,114 @@
+{
+  "applicationId": "devcon-event-app",
+  "rootPackageId": "kavya/event-app",
+  "algorithmVersion": "1.0.0",
+  "description": "Devcon 8 Event Application and its open source dependency tree with direct, transitive, and cyclic dependencies.",
+  "packages": {
+    "kavya/event-app": {
+      "id": "kavya/event-app",
+      "name": "Kavya Event App",
+      "description": "The open-source event application used by thousands of attendees at Devcon 8.",
+      "maintainer": "0x1111111111111111111111111111111111111111",
+      "repoUrl": "https://github.com/kavya/event-app",
+      "version": "1.4.0",
+      "dependencies": [
+        "pune/qr-ticketing",
+        "indic/hindi-i18n",
+        "wallet/connect-wrapper"
+      ],
+      "retentionFraction": 0.20,
+      "license": "MIT"
+    },
+    "pune/qr-ticketing": {
+      "id": "pune/qr-ticketing",
+      "name": "Pune QR Ticketing",
+      "description": "High-speed offline QR scanner and ticketing verification engine built by a solo developer in Pune.",
+      "maintainer": "0x2222222222222222222222222222222222222222",
+      "repoUrl": "https://github.com/pune-dev/qr-ticketing",
+      "version": "2.1.0",
+      "dependencies": [
+        "utils/graph-core"
+      ],
+      "retentionFraction": 0.35,
+      "license": "Apache-2.0"
+    },
+    "indic/hindi-i18n": {
+      "id": "indic/hindi-i18n",
+      "name": "Hindi i18n Localization",
+      "description": "Comprehensive Hindi localization dictionary and Devcon attendee onboarding translations.",
+      "maintainer": "0x3333333333333333333333333333333333333333",
+      "repoUrl": "https://github.com/indic-commons/hindi-i18n",
+      "version": "0.9.5",
+      "dependencies": [
+        "utils/graph-core-adapter"
+      ],
+      "retentionFraction": 0.30,
+      "license": "MIT"
+    },
+    "wallet/connect-wrapper": {
+      "id": "wallet/connect-wrapper",
+      "name": "Wallet Connect Wrapper",
+      "description": "Multi-wallet connection abstraction with native EIP-6963 discovery and session persistence.",
+      "maintainer": "0x4444444444444444444444444444444444444444",
+      "repoUrl": "https://github.com/web3-connect/wallet-connect-wrapper",
+      "version": "3.0.2",
+      "dependencies": [
+        "crypto/ethereum-provider",
+        "utils/graph-core-adapter"
+      ],
+      "retentionFraction": 0.30,
+      "license": "MIT"
+    },
+    "crypto/ethereum-provider": {
+      "id": "crypto/ethereum-provider",
+      "name": "Ethereum Provider Core",
+      "description": "Typed JSON-RPC provider and resilient connection failover for EVM chains.",
+      "maintainer": "0x5555555555555555555555555555555555555555",
+      "repoUrl": "https://github.com/crypto-primitives/ethereum-provider",
+      "version": "1.2.0",
+      "dependencies": [
+        "utils/encoding"
+      ],
+      "retentionFraction": 0.30,
+      "license": "MIT"
+    },
+    "utils/graph-core": {
+      "id": "utils/graph-core",
+      "name": "Graph Core Primitives",
+      "description": "Graph data structures, topological sort, and cycle-tolerant visitor routines.",
+      "maintainer": "0x6666666666666666666666666666666666666666",
+      "repoUrl": "https://github.com/open-utils/graph-core",
+      "version": "0.8.1",
+      "dependencies": [
+        "utils/encoding",
+        "utils/graph-core-adapter"
+      ],
+      "retentionFraction": 0.25,
+      "license": "BSD-3-Clause"
+    },
+    "utils/graph-core-adapter": {
+      "id": "utils/graph-core-adapter",
+      "name": "Graph Core Adapter",
+      "description": "Bidirectional bridge and schema transformer between Graph Core and legacy state machines.",
+      "maintainer": "0x7777777777777777777777777777777777777777",
+      "repoUrl": "https://github.com/open-utils/graph-core-adapter",
+      "version": "0.8.1",
+      "dependencies": [
+        "utils/graph-core"
+      ],
+      "retentionFraction": 0.25,
+      "license": "BSD-3-Clause"
+    },
+    "utils/encoding": {
+      "id": "utils/encoding",
+      "name": "Zero-Allocation Encoding",
+      "description": "Base58, hex, and UTF-8 zero-copy memory encoders used across cryptographic primitives.",
+      "maintainer": "0x8888888888888888888888888888888888888888",
+      "repoUrl": "https://github.com/open-utils/encoding",
+      "version": "4.1.0",
+      "dependencies": [],
+      "retentionFraction": 1.0,
+      "license": "Apache-2.0"
+    }
+  }
+}
