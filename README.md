@@ -1,7 +1,7 @@
 # Pay the Wells You Drank From — Retroactive & Dependency-Aware Deep Funding
 ### Road to Devcon XI Submission
 
-[![CI Pipeline](https://github.com/road-to-devcon/pay-the-wells/actions/workflows/ci.yml/badge.svg)](https://github.com/road-to-devcon/pay-the-wells)
+[![CI Pipeline](https://github.com/nikitabiradar231/devcon-xi-deep-fundingP3/actions/workflows/ci.yml/badge.svg)](https://github.com/nikitabiradar231/devcon-xi-deep-fundingP3/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Foundry](https://img.shields.io/badge/Foundry-1.8.1-orange.svg)](https://getfoundry.sh/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue.svg)](https://www.typescriptlang.org/)
@@ -61,13 +61,16 @@ A core requirement is ensuring maintainers understand their exact reward. For **
 ### Prerequisites
 - Node.js $\ge 20$ (v24.11.0 recommended)
 - Foundry / Forge $\ge 1.8.1$
+- Git $\ge 2.40$ with submodules
 
-### Installation
+### Clean Clone & Installation
 ```bash
+git clone --recurse-submodules https://github.com/nikitabiradar231/devcon-xi-deep-fundingP3.git
+cd devcon-xi-deep-fundingP3
 npm ci
 ```
 
-### Run All Tests
+### Run Verification & Test Suite
 ```bash
 # 1. TypeScript Test Suite (27 tests)
 npm test
@@ -75,7 +78,7 @@ npm test
 # 2. Typecheck (0 errors)
 npm run typecheck
 
-# 3. Secret Scanner
+# 3. Secret Scanner (Zero credentials in tracked files)
 npm run scan:secrets
 
 # 4. End-to-End Sample Computation & Audit Verification
@@ -98,7 +101,21 @@ Open [http://localhost:3000](http://localhost:3000) to explore the interactive d
 
 ---
 
-## 5. Repository Structure
+## 5. Deployment Status: Local Validation vs Live Sepolia
+
+This repository strictly separates local mathematical and security verification from live onchain broadcasting:
+
+- **Local Validation (Current Status: PASS & VERIFIED)**:
+  - 100% of mathematical algorithms, Merkle roots, security invariants, and smart contract suites run offline and in local simulation.
+  - Zero private keys or live funds are required for running tests, preflight checks, or the frontend demo.
+- **Live Sepolia Testnet Broadcast (Current Status: PENDING AUTHORIZATION)**:
+  - Contracts (`DeepFunding.sol`, `JuryRegistry.sol`) are ready for deployment to Ethereum Sepolia (`11155111`).
+  - No live transactions have been broadcast; `deployments/sepolia.json` records `PENDING_AUTHORIZATION` without fabricated addresses.
+  - Live deployment requires the user to configure `.env` locally with a funded Sepolia private key (~0.05 Sepolia ETH planning estimate) and explicitly execute the deployment script. See [`docs/deployment.md`](docs/deployment.md) for step-by-step operations.
+
+---
+
+## 6. Repository Structure
 
 ```
 d3/

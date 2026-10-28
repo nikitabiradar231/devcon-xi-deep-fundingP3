@@ -86,8 +86,8 @@ NEXT_PUBLIC_RPC_URL=https://rpc.sepolia.org
 ## 5. Sepolia ETH Funding Requirements
 
 The deployer address requires Sepolia testnet ETH to cover contract deployment, jury registry initialization, and gas costs:
-- **Estimated Deployment Gas**: ~1,850,000 gas (~0.015 - 0.025 Sepolia ETH at standard 15 gwei gas price).
-- **Recommended Minimum Balance**: `0.05 Sepolia ETH`.
+- **Estimated Deployment Gas**: ~1,850,000 gas (~0.015 - 0.025 Sepolia ETH under standard base fee conditions of 10-15 gwei).
+- **Planning Estimate**: `0.05 Sepolia ETH` is recommended as a conservative planning estimate to accommodate gas market fluctuations and contract verification overhead. Note: This is an empirical planning guideline, not a protocol-level minimum constraint.
 - **Public Faucets**:
   - [Google Cloud Web3 Sepolia Faucet](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)
   - [Alchemy Sepolia Faucet](https://www.alchemy.com/faucets/ethereum-sepolia)
